@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+env/
+ENV/
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+dist/
+build/
+.npm/
+
+# Agent IDE/OpenCode
+.opencode/
+.openhands/
+.cursor/
+.vscode/
+personas/
+agent_prompts/
+.friday/
+
+# Logs & Temp files
+*.log
+*.err
+*.pdf
+*.html
+backend/generated_reports/
+backend/vlc-help.txt
+
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Frontend / Node
+.env.local
+.env.*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist-ssr/
+coverage/
+
+# Backend / Python
+*.egg-info/
+.coverage
+htmlcov/
+
+# IDEs
+.idea/
+*.sln
+*.suo
+*.swp
+
