@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/*
+ * STARK INDUSTRIES / F.R.I.D.A.Y. MULTI-THEME SYSTEM
+ * Supports:
+ * 1. 'cyan' - Arc Reactor Cyan (Default Dark)
+ * 2. 'gold' - Stark Gold & Titanium (Mark III Luxury Dark)
+ * 3. 'light' - Stark Clean Minimal Lab White
+ */
+
+:root,
+[data-theme="cyan"] {
+  --color-bg: #07090e;
+  --color-surface: #0c1017;
+  --color-surface-2: #121824;
+  --color-line: #1b2333;
+  --color-ink: #f0f4fc;
+  --color-muted: #7e8c9f;
+  --color-accent: #00e5ff;
+  --color-accent-hover: #00c4db;
+  --color-warn: #ffb800;
+  --color-safe: #00f0aa;
+  --color-danger: #ff3366;
+  --bg-grid-color: rgba(255, 255, 255, 0.015);
+  --bg-glow-1: rgba(0, 229, 255, 0.04);
+  --bg-glow-2: rgba(255, 184, 0, 0.03);
+}
+
+[data-theme="gold"] {
+  --color-bg: #0c0b08;
+  --color-surface: #14120c;
+  --color-surface-2: #1e1b12;
+  --color-line: #2d2618;
+  --color-ink: #fffbf2;
+  --color-muted: #9c907d;
+  --color-accent: #ffb800;
+  --color-accent-hover: #e6a500;
+  --color-warn: #f59e0b;
+  --color-safe: #10b981;
+  --color-danger: #ef4444;
+  --bg-grid-color: rgba(255, 184, 0, 0.02);
+  --bg-glow-1: rgba(255, 184, 0, 0.05);
+  --bg-glow-2: rgba(239, 68, 68, 0.03);
+}
+
+[data-theme="light"] {
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-surface-2: #f1f5f9;
+  --color-line: #e2e8f0;
+  --color-ink: #0f172a;
+  --color-muted: #64748b;
+  --color-accent: #0ea5e9;
+  --color-accent-hover: #0284c7;
+  --color-warn: #d97706;
+  --color-safe: #059669;
+  --color-danger: #dc2626;
+  --bg-grid-color: rgba(0, 0, 0, 0.03);
+  --bg-glow-1: rgba(14, 165, 233, 0.04);
+  --bg-glow-2: rgba(217, 119, 6, 0.03);
+}
+
+@theme {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-2: var(--color-surface-2);
+  --color-line: var(--color-line);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-warn: var(--color-warn);
+  --color-safe: var(--color-safe);
+  --color-danger: var(--color-danger);
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", "Cascadia Code", "Fira Code", monospace;
+
+  --radius-card: 14px;
+  --radius-pill: 999px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--color-bg);
+  background-image: 
+    radial-gradient(circle at 50% 0%, var(--bg-glow-1) 0%, transparent 60%),
+    radial-gradient(circle at 100% 100%, var(--bg-glow-2) 0%, transparent 50%),
+    linear-gradient(var(--bg-grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid-color) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Hide all scrollbars / sliders completely */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+  width: 0;
+  height: 0;
+}
+
+/* Stark HUD Glow Utilities */
+.hud-glow-cyan {
+  box-shadow: 0 0 25px -5px rgba(0, 229, 255, 0.25);
+}
+
+.hud-glow-amber {
+  box-shadow: 0 0 25px -5px rgba(255, 184, 0, 0.25);
+}
+
+.hud-glow-rose {
+  box-shadow: 0 0 25px -5px rgba(255, 51, 102, 0.25);
+}
+
+/* Instagram Headline Typography Style */
+.font-instagram {
+  font-family: 'Plus Jakarta Sans', 'Outfit', var(--font-sans);
+  letter-spacing: 0.05em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
