@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 350" fill="none">
+  <!-- Ice Bear We Bare Bears Vector Illustration -->
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Cute Little Tail -->
+  <path d="M172 205C182 205 186 215 184 222C182 228 174 230 166 226" fill="#FFFFFF" stroke="#111827" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Main Body & Head Outline -->
+  <path d="M72 32
+           C88 32 108 45 125 72
+           C145 104 165 152 170 205
+           C174 246 166 270 152 285
+           L152 320
+           C152 325 146 328 136 328
+           C126 328 122 322 122 312
+           L124 285
+           L96 285
+           L96 320
+           C96 326 90 328 80 328
+           C68 328 66 322 66 312
+           L68 275
+           C42 260 28 225 28 175
+           C28 130 38 100 48 85
+           C32 80 22 65 24 50
+           C26 36 40 32 54 36
+           C60 33 66 32 72 32Z"
+        fill="#FFFFFF"
+        stroke="#111827"
+        stroke-width="5"
+        stroke-linejoin="round"
+        stroke-linecap="round"/>
+
+  <!-- Left Ear (Front) -->
+  <path d="M68 32 C66 20 78 14 86 18 C92 21 93 28 91 35" fill="#FFFFFF" stroke="#111827" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Right Ear (Back) -->
+  <path d="M102 36 C105 24 116 20 123 25 C128 29 128 37 124 45" fill="#FFFFFF" stroke="#111827" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Back Paw Toes -->
+  <path d="M130 328 L130 320" stroke="#111827" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M142 328 L142 320" stroke="#111827" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Front Paw Toes -->
+  <path d="M74 328 L74 320" stroke="#111827" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M86 328 L86 320" stroke="#111827" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Arm / Front Paw -->
+  <path d="M98 128
+           L98 220
+           C98 238 116 242 124 235
+           C130 228 132 210 134 126"
+        fill="#FFFFFF"
+        stroke="#111827"
+        stroke-width="4.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+  <!-- Arm Claws / Separators -->
+  <path d="M112 240 L114 230" stroke="#111827" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M122 238 L124 228" stroke="#111827" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Black Oval Nose -->
+  <ellipse cx="44" cy="58" rx="14" ry="9" fill="#111827"/>
+
+  <!-- Cute Dot Eyes -->
+  <circle cx="58" cy="46" r="4" fill="#111827"/>
+  <circle cx="94" cy="48" r="4" fill="#111827"/>
+
+  <!-- Subtle Neutral Mouth Expression Line -->
+  <path d="M52 82C55 80 60 80 64 82" stroke="#111827" stroke-width="3" stroke-linecap="round"/>
+</svg>
